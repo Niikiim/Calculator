@@ -1,5 +1,5 @@
 import tkinter as tk
-from calculator import desconto
+
 
 window = tk.Tk()
 window.title = "Calculadora de desconto"
@@ -14,7 +14,7 @@ entry_num.pack(side=tk.LEFT, fill=tk.X, expand=True)
 
 frame_calc = tk.Frame(window)
 frame_calc.pack(pady=15)
-button_calc = tk.Button(frame_calc, text="Calcular desoconto", command=lambda:desconto)
+button_calc = tk.Button(frame_calc, text="Calcular desoconto")
 button_calc.pack(side=tk.LEFT,padx=10)
 
 window.mainloop()
