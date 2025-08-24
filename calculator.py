@@ -3,18 +3,19 @@
 #Desconto não pode ser maior que 100 reais
 #Qual o valor do desconto maximo ?
 
+
 def desconto (desc,price):
 
     try:
-        price = float(price)
-        desc = float(desc)
+        price = round(float(price),2)
+        desc = round(float(desc),2)
         
     except(ValueError,TypeError):
         return "Erro!\n Insira os valores numéricos válidos!"
 
     desc = (desc/100)
     desc_amount = desc * price
-    result = price - desc
+    result = price - desc_amount
         
     if  0 <= desc <= 10 and desc_amount <= 100:
   
@@ -30,10 +31,9 @@ def desconto (desc,price):
     
     elif result > 100:
         
-        desc_max = (100/price)*100
+        desc_max = round(((100/price)*100),2)
 
-        return("O desconto não pode ser maior que 100 reais!\n" f"O desconto máximo será de {desc_max}")
-
-
+        return("O desconto não pode ser maior que 100 reais!\n" f"O desconto máximo será de {desc_max}%")
     
+
 
