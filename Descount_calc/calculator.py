@@ -19,7 +19,7 @@ def desconto (desc,price):
         
     if  0 <= desc <= 10 and desc_amount <= 100:
   
-        return(f"O valor do desconto é {result}")
+        return(f"O valor final do produto é {result}")
 
     elif desc > 10:
 
