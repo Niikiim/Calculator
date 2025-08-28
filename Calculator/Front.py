@@ -1,24 +1,31 @@
 import tkinter as tk
+from tkinter import *
 
-window = tk.Tk()
+
+window = Tk()
 window.title("Calculadora")
 window.geometry("500x700")
+window.config(bg="white")
 
 
-frame_visor = tk.Frame(window)
-frame_visor.pack(pady=50,padx=500)
-frame_visor.place(x=50, width=400, height=100)
-tk.Label(frame_visor).pack(side=tk.LEFT)
-entry_num = tk.Entry(frame_visor)
-entry_num.pack(side=tk.RIGHT,fill=tk.X, expand = True)
+mb = Menubutton(activebackground="lightblue",text="Menu",relief=RAISED)
+mb.grid()
+mb.menu = Menu(mb,tearoff=0)
+mb["menu"] = mb.menu
+
+Option = IntVar()
+Config = IntVar()
+
+mb.menu.add_checkbutton (label="Option", variable=Option)
+mb.menu.add_checkbutton(label="Config", variable=Config)
 
 
 
 
-button_num0 = tk.Button(window)
-button_num0.pack(pady=10,padx=10)
-tk.Label(button_num0, text="0")
-button_num0.pack(side=tk.LEFT,padx = 50)
+#frame_visor = tk.Frame(window)
+#frame_visor.place(x=125, y=50)
+#entry_num = tk.Entry(frame_visor,font=("Arial",15), justify="right")
+#entry_num.pack(side=tk.TOP,fill=tk.X,padx=2,pady=2,expand=True)
 
 
 window.mainloop()
