@@ -23,7 +23,7 @@ entry_num.pack(side=tk.LEFT, fill=tk.X, expand=True)
 #Frame para colocar o desconto
 frame_desc = tk.Frame(window)
 frame_desc.pack(pady=15)
-tk.Label(frame_desc, text="Digite o valor do produto:").pack(side=tk.LEFT,padx=(0,16))
+tk.Label(frame_desc, text="Digite qual a porcentagem de desconto que será aplicada:").pack(side=tk.LEFT,padx=(0,16))
 entry_desc = tk.Entry(frame_desc)
 entry_desc.pack(side=tk.LEFT, fill=tk.X, expand=True)
 

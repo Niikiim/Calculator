@@ -13,8 +13,8 @@ def desconto (desc,price):
     except(ValueError,TypeError):
         return "Erro!\n Insira os valores numéricos válidos!"
 
-    desc = (desc/100)
-    desc_amount = desc * price
+    descp = (desc/100)
+    desc_amount = descp * price
     result = price - desc_amount
         
     if  0 <= desc <= 10 and desc_amount <= 100:
@@ -27,7 +27,7 @@ def desconto (desc,price):
     
     elif desc < 0: 
          
-        return("O desconto não pode ser menor que 0!")
+        return("O desconto não pode ser menor que 0%!")
     
     elif result > 100:
         
