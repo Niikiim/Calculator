@@ -24,11 +24,11 @@ mb.menu.add_checkbutton(label="Config", variable=Config)
 
 
 
-frame_num = tk.Frame(window)
-frame_num.pack(pady=15)
-tk.Label(frame_num, text="Digite o valor do produto:").pack(side=tk.LEFT,padx=(0,16))
-entry_num = tk.Entry(frame_num)
-entry_num.pack(side=tk.LEFT, fill=tk.X, expand=True)
+# frame_num = tk.Frame(window)
+# frame_num.pack(pady=15)
+# tk.Label(frame_num, text="Digite o valor do produto:").pack(side=tk.LEFT,padx=(0,16))
+# entry_num = tk.Entry(frame_num)
+# entry_num.pack(side=tk.LEFT, fill=tk.X, expand=True)
 
 
 
