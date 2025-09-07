@@ -31,11 +31,6 @@ mb.menu.add_checkbutton(label="Config", variable=Config)
 # entry_num.pack(side=tk.LEFT, fill=tk.X, expand=True)
 
 
-
-
-
-
-
 #frame_visor = tk.Frame(window)
 #frame_visor.place(x=125, y=50)
 #entry_num = tk.Entry(frame_visor,font=("Arial",15), justify="right")
